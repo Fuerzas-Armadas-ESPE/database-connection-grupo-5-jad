@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/beGrFWyM)
 # Blog Personal Nest
 
 Este es un proyecto de blog personal desarrollado con NestJS.
@@ -14,20 +13,6 @@ Si deseas aprender a implementar autenticación en un blog personal con NestJS, 
 - [**Tutorial:** Implementación de un Blog Personal con Nest.js](/Tutoriales/tutorial.md)
 
 - [**Tutorial:** Implementación de Autenticación en un Blog Personal con Nest.js](/Tutoriales/tutorial-auth.md)
-
-<!-- - [**Tutorial:** Implementación de Docker y Docker Compose en un Blog Personal con Nest.js](/Tutoriales/tutorial-docker.md) -->
-
-- [**Tutorial:** Implementación de MongoDB en un Blog Personal con Nest.js](/Tutoriales/tutorial-connection-database.md)
-
-- [**Tutorial:** Implementación de Peticiones Get, Post, Put, Delete](/Tutoriales/tutorial-peticiones.md)
-
-<!-- - [**Tutorial:** Implementación de Comentarios en un Blog Personal con Nest.js](/Tutoriales/tutorial-comentarios.md)
-
-- [**Tutorial:** Mejora de la Validación de Datos en un Blog Personal con Nest.js](/Tutoriales/tutorial-validacion.md)
-
-- [**Tutorial:** Implementación de Pruebas Unitarias en un Blog Personal con Nest.js](/Tutoriales/tutorial-pruebas.md) -->
-
-
 
 ## Descripción
 

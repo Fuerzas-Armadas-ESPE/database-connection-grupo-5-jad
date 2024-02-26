@@ -1,6 +1,7 @@
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
+// import { PostSchema } from './post.model';
 
 @Injectable()
 export class PostsService {
@@ -14,20 +15,21 @@ export class PostsService {
     return await this.postModel.findById(id).exec();
   }
 
-  async createPost(postData: any): Promise<any> {
+  async updatePost(id: string, postData: any): Promise<any | null> {
     try {
-      const createdPost = new this.postModel(postData);
-      return await createdPost.save();
+      return await this.postModel
+        .findByIdAndUpdate(id, postData, { new: true })
+        .exec();
     } catch (error: any) {
       throw new InternalServerErrorException(error.message);
     }
   }
 
-  async updatePost(id: string, postData: any): Promise<any | null> {
-    // Implementa el método de actualización si es necesario
-  }
-
   async deletePost(id: string): Promise<void> {
-    // Implementa el método de eliminación si es necesario
+    try {
+      await this.postModel.findByIdAndDelete(id).exec();
+    } catch (error: any) {
+      throw new InternalServerErrorException(error.message);
+    }
   }
 }
